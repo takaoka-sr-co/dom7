@@ -137,9 +137,9 @@ export interface Dom7Array {
   /** Remove one or more specified classes */
   removeClass(...className: string[]): Dom7Array;
   /** Determine whether any of the matched elements are assigned the given classes */
-  hasClass(...className: string[]): Dom7Array;
+  hasClass(...className: string[]): boolean;
   /** Remove (if class is present) or add (if not) one or more classes from each element in the set of matched elements */
-  toggleClass(...className: string[]): Dom7Array;
+  toggleClass(...className: string[]): void;
 
   // ATTRIBUTES AND PROPERTIES
   /** Get property value */
